@@ -1,13 +1,16 @@
-import withMDX from '@next/mdx'
+import withMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-    images: {
-        dangerouslyAllowSVG: true,
-        contentDispositionType: 'attachment',
-        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
 };
 
-export default withMDX()(nextConfig)
+export default withMDX()(nextConfig);
+
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+initOpenNextCloudflareForDev();
