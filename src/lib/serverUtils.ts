@@ -1,28 +1,14 @@
-import path from "path";
-import fs from "fs";
 import { Data } from "@/types/data";
 import { BlogMetadata } from "@/types/blog";
-
-function isBlogHeaderData(data: any): data is BlogMetadata {
-  return (
-    typeof data.title === "string" &&
-    typeof data.description === "string" &&
-    typeof data.isPublished === "boolean" &&
-    typeof data.slug === "string" &&
-    typeof data.publishDate === "string" // or Date if you use Date
-  );
-}
+import portfolioData from "../../public/data.json";
 
 export async function getJSONData(): Promise<Data> {
-  const filePath = path.join(process.cwd(), "public", "data.json");
-  const file = fs.readFileSync(filePath, "utf-8");
-
-  return JSON.parse(file);
+  // Import JSON at build time so it works on Cloudflare Workers
+  // (no Node.js filesystem at runtime).
+  return portfolioData as Data;
 }
 
 export async function getBlogPosts(): Promise<BlogMetadata[]> {
-  // Skip MDX blog loading for now (sample posts are unpublished).
-  // Dynamic MDX imports were also contributing to slow/hung compiles under
-  // macOS EMFILE file-watcher limits during `next dev`.
+  // Sample template blogs are unpublished; skip MDX loading on Workers.
   return [];
 }
