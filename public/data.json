@@ -1,0 +1,262 @@
+{
+  "visual": {
+    "navbar": {
+      "links": [
+        {
+          "label": "Experience",
+          "path": "#experience"
+        },
+        {
+          "label": "Skills",
+          "path": "#skills"
+        },
+        {
+          "label": "Projects",
+          "path": "#projects"
+        },
+        {
+          "label": "Education",
+          "path": "#education"
+        }
+      ]
+    },
+    "home": {
+      "sections": {
+        "banner": true,
+        "experience": true,
+        "project": true,
+        "education": true,
+        "testimonial": false
+      }
+    }
+  },
+  "personalInfo": {
+    "name": "Shafeeq Ahamed",
+    "title": "DevOps Engineer",
+    "location": "San Francisco, CA",
+    "bio": "DevOps Engineer with 6+ years building cloud infrastructure and running production systems at scale. Saved $834K through AWS optimization and cloud migrations. Specializing in model-serving infrastructure (GPU), Terraform, Ansible, and Kubernetes."
+  },
+  "contactInfo": {
+    "email": "shafeeq.jms@gmail.com",
+    "phone": "+1 (925) 319-8712",
+    "linkedin": "https://www.linkedin.com/in/shafeeq-ahamed-devops",
+    "github": "https://github.com/shafeeqahmd",
+    "twitter": "",
+    "website": "",
+    "resume": "/Resume_Shafeeq.pdf"
+  },
+  "skills": {
+    "languages": [
+      "Python",
+      "Bash",
+      "Shell scripting"
+    ],
+    "frameworks": [
+      "Terraform",
+      "Ansible",
+      "CloudFormation",
+      "Helm",
+      "GitHub Actions",
+      "AWS CodePipeline"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL",
+      "Elasticsearch",
+      "Redis",
+      "Cloudflare D1"
+    ],
+    "tools": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Cloudflare",
+      "Docker",
+      "Kubernetes",
+      "Amazon EKS",
+      "AWS ECS",
+      "Datadog",
+      "Grafana",
+      "Prometheus",
+      "PagerDuty",
+      "Nvidia H100",
+      "AWS Bedrock"
+    ]
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "GPU Model-Serving for DoD Weather Forecasting",
+      "description": "Architected AWS ECS infrastructure with Nvidia H100 GPUs scaled to 70 concurrent multi-node weather forecast jobs for DoD clients. Cut deployment time by 83% (1 hour to 10 minutes), saved $750K annually through GPU rightsizing and Batch scheduling, and held 99.9% uptime with NIST 800-53 compliance.",
+      "technologies": [
+        "AWS ECS",
+        "Nvidia H100",
+        "Docker",
+        "AWS Batch",
+        "Datadog",
+        "Terraform"
+      ],
+      "live_url": "https://atmo.ai",
+      "code_repo_url": "",
+      "cover": "/assets/project_gpu.jpg"
+    },
+    {
+      "id": "2",
+      "title": "ColorKloud - AI & Serverless Consulting",
+      "description": "Founded a consulting practice deploying 17 production serverless apps (observability, fintech, ecommerce, ops dashboards) on Cloudflare Workers with D1. Integrated Stripe, RevenueCat, Twilio, Supabase, Clerk, and Okta. Built AI-powered OCR pipelines with Cloudflare Workers AI and AWS Bedrock.",
+      "technologies": [
+        "Cloudflare Workers",
+        "AWS Bedrock",
+        "Terraform",
+        "Ansible",
+        "Stripe",
+        "Supabase"
+      ],
+      "live_url": "https://colorkloud.us",
+      "code_repo_url": "",
+      "cover": "/assets/project_colorkloud.jpg"
+    },
+    {
+      "id": "3",
+      "title": "LocationIQ - Cost, Latency & Reliability",
+      "description": "Migrated 40% of on-premise workloads to AWS saving $84K annually. Dropped p95 latency 75% (100-200ms to under 50ms) with HAProxy routing. Reduced critical vulnerabilities 80% via security pre-checks, and automated CI/CD with AWS CodePipeline across hybrid infrastructure.",
+      "technologies": [
+        "AWS",
+        "HAProxy",
+        "Ansible",
+        "CodePipeline",
+        "Grafana",
+        "Nessus"
+      ],
+      "live_url": "https://locationiq.com",
+      "code_repo_url": "",
+      "cover": "/assets/project_locationiq.jpg"
+    }
+  ],
+  "workExperience": [
+    {
+      "id": "1",
+      "company": "ColorKloud",
+      "companyWebsite": "https://colorkloud.us",
+      "role": "Founding DevOps Consultant",
+      "startDate": "Sep 2024",
+      "endDate": "Present",
+      "technologies": [
+        "Cloudflare Workers",
+        "AWS Bedrock",
+        "Terraform",
+        "Ansible",
+        "ECS"
+      ],
+      "keyResponsibilities": [
+        "Deployed 17 production serverless applications on Cloudflare Workers with D1, integrating Stripe, RevenueCat, Twilio, Postmark, Supabase, Clerk, and Okta.",
+        "Built AI-powered applications using Cloudflare Workers AI bindings and AWS Bedrock for OCR pipelines running on ECS.",
+        "Cut client hosting costs by 40% ($500  to  $300/month) by migrating on-premises apps to the cloud with Terraform and Ansible.",
+        "Accelerated release cadence from weekly to daily deployments using Claude Code and Cursor for infrastructure development."
+      ]
+    },
+    {
+      "id": "2",
+      "company": "Atmo Inc",
+      "companyWebsite": "https://atmo.ai",
+      "role": "Platform Engineer (via ColorKloud)",
+      "startDate": "Mar 2025",
+      "endDate": "Nov 2025",
+      "technologies": [
+        "AWS ECS",
+        "Nvidia H100",
+        "Docker",
+        "GitHub Actions",
+        "Datadog"
+      ],
+      "keyResponsibilities": [
+        "Architected AWS ECS infrastructure with Nvidia H100 GPUs for 70 concurrent multi-node weather forecast jobs serving DoD clients.",
+        "Cut deployment time by 83% (1 hour  to  10 minutes) by containerizing ML model deployments.",
+        "Saved $750K annually by rightsizing H100 instances, implementing AWS Batch scheduling, and optimizing S3 lifecycle policies.",
+        "Shipped frontend releases 2-3x daily via GitHub Actions and CloudFront CI/CD; maintained 99.9% uptime on-call.",
+        "Passed NIST 800-53 certification through security audits and DoD compliance evaluations."
+      ]
+    },
+    {
+      "id": "3",
+      "company": "LocationIQ - Unwired Labs",
+      "companyWebsite": "https://locationiq.com",
+      "role": "DevOps Engineer & SRE",
+      "startDate": "Mar 2020",
+      "endDate": "Mar 2024",
+      "technologies": [
+        "AWS",
+        "Ansible",
+        "HAProxy",
+        "Grafana",
+        "CodePipeline"
+      ],
+      "keyResponsibilities": [
+        "Saved $84K annually by migrating 40% of on-premise workloads to AWS with capacity optimization.",
+        "Dropped p95 response time by 75% (100-200ms  to  under 50ms) with latency-based HAProxy routing.",
+        "Reduced critical vulnerabilities by 80% by adding security pre-checks to production rollouts.",
+        "Automated CI/CD with AWS CodePipeline; ran quarterly scans with Nessus, OWASP ZAP, and Probely.",
+        "Executed zero-downtime Ubuntu upgrades across 40+ servers and managed hybrid infra with Ansible."
+      ]
+    },
+    {
+      "id": "4",
+      "company": "Zudioz",
+      "companyWebsite": "#!",
+      "role": "DevOps Engineer",
+      "startDate": "Oct 2018",
+      "endDate": "May 2020",
+      "technologies": [
+        "AWS EC2",
+        "MySQL",
+        "Magento",
+        "WordPress"
+      ],
+      "keyResponsibilities": [
+        "Built 12 e-commerce sites on Joomla, Magento, and WordPress for manufacturing clients.",
+        "Improved disaster recovery MTTR by 94% (2 days  to  3 hours) with MySQL backup automation.",
+        "Ran MySQL master-replica configuration across 27 servers and maintained AWS EC2 infrastructure."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "institution": "Amazon Web Services",
+      "degree": "AWS Certified - DevOps Engineer Professional",
+      "description": "Professional-level certification covering continuous delivery, automation, monitoring, and high-availability architectures on AWS.",
+      "startDate": "Certified",
+      "endDate": "Active"
+    },
+    {
+      "id": "2",
+      "institution": "Amazon Web Services",
+      "degree": "AWS Certified - SysOps Administrator Associate",
+      "description": "Associate-level certification focused on deploying, managing, and operating workloads on AWS.",
+      "startDate": "Certified",
+      "endDate": "Active"
+    },
+    {
+      "id": "3",
+      "institution": "Anna University, Chennai, India",
+      "degree": "B.E. in Electrical & Electronics Engineering",
+      "description": "Foundation in embedded systems, control systems, and microcontroller programming.",
+      "startDate": "Aug 2012",
+      "endDate": "Aug 2016"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified - DevOps Engineer Professional",
+      "institution": "Amazon Web Services",
+      "date": "Active"
+    },
+    {
+      "title": "AWS Certified - SysOps Administrator Associate",
+      "institution": "Amazon Web Services",
+      "date": "Active"
+    }
+  ],
+  "hobbies": [],
+  "testimonials": []
+}
