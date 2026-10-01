@@ -255,6 +255,30 @@
     },
     {
       "id": "3",
+      "institution": "Amazon Web Services",
+      "degree": "AWS Educate Machine Learning Foundation",
+      "description": "Foundational training covering machine learning concepts, use cases, and AWS ML services.",
+      "startDate": "Certified",
+      "endDate": ""
+    },
+    {
+      "id": "4",
+      "institution": "Amazon Web Services",
+      "degree": "AWS Educate Introduction to Generative AI",
+      "description": "Introductory course on generative AI concepts, applications, and AWS generative AI services.",
+      "startDate": "Certified",
+      "endDate": ""
+    },
+    {
+      "id": "5",
+      "institution": "Amazon Web Services",
+      "degree": "AWS Educate Getting Started with Serverless",
+      "description": "Introductory training on serverless architecture and building applications on AWS serverless services.",
+      "startDate": "Certified",
+      "endDate": ""
+    },
+    {
+      "id": "6",
       "institution": "Anna University, Chennai, India",
       "degree": "B.E. in Electrical & Electronics Engineering",
       "description": "Foundation in embedded systems, control systems, and microcontroller programming.",
@@ -270,6 +294,21 @@
     },
     {
       "title": "AWS Certified - SysOps Administrator Associate",
+      "institution": "Amazon Web Services",
+      "date": ""
+    },
+    {
+      "title": "AWS Educate Machine Learning Foundation",
+      "institution": "Amazon Web Services",
+      "date": ""
+    },
+    {
+      "title": "AWS Educate Introduction to Generative AI",
+      "institution": "Amazon Web Services",
+      "date": ""
+    },
+    {
+      "title": "AWS Educate Getting Started with Serverless",
       "institution": "Amazon Web Services",
       "date": ""
     }
