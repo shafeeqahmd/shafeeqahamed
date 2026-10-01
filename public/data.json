@@ -330,6 +330,28 @@
         "Python"
       ],
       "code_repo_url": "https://github.com/shafeeqahmd/Image-compression-AWS-Lambda-S3"
+    },
+    {
+      "id": "2",
+      "title": "Integrating a GitHub Repository with Cloudflare Pages for Static Websites",
+      "description": "This guide walks you through setting up a static website using Cloudflare Pages and integrating it with a GitHub repository at no cost. Additionally, this guide explains how to set up and pay for a custom domain for your website and integrate it with Cloudflare Pages.",
+      "technologies": [
+        "Cloudflare Pages",
+        "GitHub",
+        "Static Sites"
+      ],
+      "code_repo_url": "https://github.com/shafeeqahmd/GitHub-Cloudflare-Pages-Integration/blob/main/README.md"
+    },
+    {
+      "id": "3",
+      "title": "Python + Selenium Integration",
+      "description": "Introduction to Selenium for browser automation: replicate user actions, automate form submissions and data entry, navigate pages, and handle repetitive tasks programmatically - for example, automating data entry from an Excel spreadsheet into a Google Form.",
+      "technologies": [
+        "Python",
+        "Selenium",
+        "Browser Automation"
+      ],
+      "code_repo_url": "https://github.com/shafeeqahmd/Python-Selenium"
     }
   ]
 }
