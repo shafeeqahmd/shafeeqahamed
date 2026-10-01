@@ -55,6 +55,9 @@ export interface Project {
   live_url: string;
   code_repo_url: string;
   cover: string;
+  /** When true, hide the live link and show statusNote instead */
+  siteDown?: boolean;
+  statusNote?: string;
 }
 
 export interface WorkExperience {

@@ -187,9 +187,7 @@ export default async function Home() {
           id="projects"
           className="container max-w-5xl mx-auto py-12 md:py-16 lg:py-20"
         >
-          <h2 className="font-bold text-3xl md:text-5xl mb-12">
-            Highlighted Work
-          </h2>
+          <h2 className="font-bold text-3xl md:text-5xl mb-12">Projects</h2>
           <div className="grid grid-cols-1 gap-4 lg:gap-6">
             {data.projects.map((project) => (
               <Card key={project.title} className="flex flex-col lg:flex-row">
@@ -216,10 +214,25 @@ export default async function Home() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription>{project.description}</CardDescription>
+                    {project.siteDown && project.statusNote && (
+                      <p className="mt-3 text-sm text-gray-400 dark:text-gray-500">
+                        {project.statusNote}
+                        {project.live_url ? (
+                          <>
+                            {" "}
+                            (
+                            <span className="text-gray-400 dark:text-gray-500">
+                              {project.live_url.replace(/^https?:\/\//, "")}
+                            </span>
+                            )
+                          </>
+                        ) : null}
+                      </p>
+                    )}
                   </CardContent>
                   <CardFooter>
-                    <div className="flex space-x-3">
-                      {project.live_url && (
+                    <div className="flex flex-wrap items-center gap-3">
+                      {project.live_url && !project.siteDown && (
                         <Link
                           href={project.live_url}
                           prefetch={false}

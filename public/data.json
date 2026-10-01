@@ -85,6 +85,23 @@
   },
   "projects": [
     {
+      "id": "0",
+      "title": "PingPulse",
+      "description": "Lightweight observability for stage-based workflows and AI agents. Model your pipeline as stages (ingest to validate to route to LLM to action), track health, latency, and context per stage plus agent handoffs, and get alerts when steps fail, stall, or run out of order. Simple one-line integration per stage with timelines and API-based approvals - workflow-level visibility, not just raw logs.",
+      "technologies": [
+        "Workflow Observability",
+        "AI Agents",
+        "Webhooks",
+        "Alerts",
+        "API Approvals"
+      ],
+      "live_url": "https://pingpulsehq.com",
+      "code_repo_url": "",
+      "cover": "/assets/project_pingpulse.jpg",
+      "siteDown": true,
+      "statusNote": "Site is currently down to save cost"
+    },
+    {
       "id": "1",
       "title": "GPU Model-Serving for DoD Weather Forecasting",
       "description": "Architected AWS ECS infrastructure with Nvidia H100 GPUs scaled to 70 concurrent multi-node weather forecast jobs for DoD clients. Cut deployment time by 83% (1 hour to 10 minutes), saved $750K annually through GPU rightsizing and Batch scheduling, and held 99.9% uptime with NIST 800-53 compliance.",
