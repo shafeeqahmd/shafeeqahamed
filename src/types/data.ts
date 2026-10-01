@@ -60,6 +60,14 @@ export interface Project {
   statusNote?: string;
 }
 
+export interface MicroProject {
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  code_repo_url: string;
+}
+
 export interface WorkExperience {
   id: string;
   company: string;
@@ -100,6 +108,7 @@ export interface Data {
   contactInfo: ContactInfo;
   skills: Skills;
   projects: Project[];
+  microProjects: MicroProject[];
   workExperience: WorkExperience[];
   education: Education[];
   certifications: Certification[];

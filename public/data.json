@@ -15,6 +15,10 @@
           "path": "#projects"
         },
         {
+          "label": "Micro Projects",
+          "path": "#micro-projects"
+        },
+        {
           "label": "Education",
           "path": "#education"
         }
@@ -314,5 +318,18 @@
     }
   ],
   "hobbies": [],
-  "testimonials": []
+  "testimonials": [],
+  "microProjects": [
+    {
+      "id": "1",
+      "title": "Thumbnail/Display image auto-compression using AWS Lambda & AWS S3",
+      "description": "Created a Lambda function that compresses image files from an S3 bucket (thumbnail), stores the compressed images in another bucket (compressed-thumbnail), and deletes the source images.",
+      "technologies": [
+        "AWS Lambda",
+        "AWS S3",
+        "Python"
+      ],
+      "code_repo_url": "https://github.com/shafeeqahmd/Image-compression-AWS-Lambda-S3"
+    }
+  ]
 }

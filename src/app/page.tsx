@@ -267,6 +267,52 @@ export default async function Home() {
         </section>
       )}
 
+      {/* Micro Projects Section */}
+      {data.microProjects?.length > 0 && (
+        <section
+          id="micro-projects"
+          className="container max-w-5xl mx-auto py-12 md:py-16 lg:py-20"
+        >
+          <h2 className="font-bold text-3xl md:text-5xl mb-12">
+            Micro Projects
+          </h2>
+          <div className="grid grid-cols-1 gap-4 lg:gap-6">
+            {data.microProjects.map((project) => (
+              <Card key={project.id}>
+                <CardHeader>
+                  <CardTitle>{project.title}</CardTitle>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardContent>
+                <CardFooter>
+                  {project.code_repo_url && (
+                    <Link
+                      href={project.code_repo_url}
+                      prefetch={false}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button size="sm" variant="outline">
+                        <GitHubLogoIcon className="h-3 w-3 mr-2" />
+                        GitHub
+                      </Button>
+                    </Link>
+                  )}
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Education Section */}
       {sections.education && (
         <section
