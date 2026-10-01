@@ -243,7 +243,7 @@
       "degree": "AWS Certified - DevOps Engineer Professional",
       "description": "Professional-level certification covering continuous delivery, automation, monitoring, and high-availability architectures on AWS.",
       "startDate": "Certified",
-      "endDate": "Active"
+      "endDate": ""
     },
     {
       "id": "2",
@@ -251,7 +251,7 @@
       "degree": "AWS Certified - SysOps Administrator Associate",
       "description": "Associate-level certification focused on deploying, managing, and operating workloads on AWS.",
       "startDate": "Certified",
-      "endDate": "Active"
+      "endDate": ""
     },
     {
       "id": "3",
@@ -266,12 +266,12 @@
     {
       "title": "AWS Certified - DevOps Engineer Professional",
       "institution": "Amazon Web Services",
-      "date": "Active"
+      "date": ""
     },
     {
       "title": "AWS Certified - SysOps Administrator Associate",
       "institution": "Amazon Web Services",
-      "date": "Active"
+      "date": ""
     }
   ],
   "hobbies": [],
