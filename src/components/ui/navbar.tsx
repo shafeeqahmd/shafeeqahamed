@@ -17,13 +17,16 @@ export default async function Navbar() {
             src="/assets/logo.svg"
             height={40}
             width={40}
-            alt="Shafeeq Ahamed"
+            alt="Shafeeq Ahamed portfolio home"
           />
           <span className="hidden sm:inline font-semibold tracking-tight">
             Shafeeq Ahamed
           </span>
         </Link>
-        <nav className="hidden space-x-4 lg:flex">
+        <nav
+          className="hidden space-x-4 lg:flex"
+          aria-label="Primary"
+        >
           <ThemeToggler />
           {data.visual.navbar.links.map((item) => (
             <Link

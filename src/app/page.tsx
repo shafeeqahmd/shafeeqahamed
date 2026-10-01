@@ -41,7 +41,7 @@ export default async function Home() {
                 src="/assets/profile.jpg"
                 width={280}
                 height={280}
-                alt={data.personalInfo.name}
+                alt={`${data.personalInfo.name}, ${data.personalInfo.title} in ${data.personalInfo.location}`}
                 priority
                 className="mx-auto aspect-square overflow-hidden object-cover object-center rounded-full ring-4 ring-[#FF6342]/30"
               />
@@ -60,37 +60,62 @@ export default async function Home() {
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 {data.contactInfo.github && (
-                  <Link href={data.contactInfo.github} prefetch={false}>
+                  <Link
+                    href={data.contactInfo.github}
+                    prefetch={false}
+                    aria-label="GitHub profile"
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                  >
                     <Button variant="secondary" size="icon">
-                      <GitHubLogoIcon className="h-4 w-4" />
+                      <GitHubLogoIcon className="h-4 w-4" aria-hidden="true" />
                     </Button>
                   </Link>
                 )}
                 {data.contactInfo.twitter && (
-                  <Link href={data.contactInfo.twitter} prefetch={false}>
+                  <Link
+                    href={data.contactInfo.twitter}
+                    prefetch={false}
+                    aria-label="Twitter profile"
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                  >
                     <Button variant="secondary" size="icon">
-                      <TwitterLogoIcon className="h-4 w-4" />
+                      <TwitterLogoIcon className="h-4 w-4" aria-hidden="true" />
                     </Button>
                   </Link>
                 )}
                 {data.contactInfo.linkedin && (
-                  <Link href={data.contactInfo.linkedin} prefetch={false}>
+                  <Link
+                    href={data.contactInfo.linkedin}
+                    prefetch={false}
+                    aria-label="LinkedIn profile"
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                  >
                     <Button variant="secondary" size="icon">
-                      <LinkedInLogoIcon className="h-4 w-4" />
+                      <LinkedInLogoIcon className="h-4 w-4" aria-hidden="true" />
                     </Button>
                   </Link>
                 )}
                 {data.contactInfo.email && (
-                  <Link href={`mailto:${data.contactInfo.email}`}>
+                  <Link
+                    href={`mailto:${data.contactInfo.email}`}
+                    aria-label={`Email ${data.personalInfo.name}`}
+                  >
                     <Button variant="secondary" size="icon">
-                      <EnvelopeClosedIcon className="h-4 w-4" />
+                      <EnvelopeClosedIcon className="h-4 w-4" aria-hidden="true" />
                     </Button>
                   </Link>
                 )}
                 {data.contactInfo.resume && (
-                  <Link href={data.contactInfo.resume} prefetch={false}>
+                  <Link
+                    href={data.contactInfo.resume}
+                    prefetch={false}
+                    aria-label="Download resume PDF"
+                  >
                     <Button>
-                      <DownloadIcon className="h-4 w-4 mr-2" />
+                      <DownloadIcon className="h-4 w-4 mr-2" aria-hidden="true" />
                       Resume
                     </Button>
                   </Link>

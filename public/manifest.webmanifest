@@ -1,0 +1,24 @@
+{
+  "name": "Shafeeq Ahamed",
+  "short_name": "Shafeeq",
+  "description": "DevOps Engineer portfolio - cloud infrastructure, Kubernetes, Terraform, and PingPulse.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6342",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/profile.jpg",
+      "sizes": "1024x1020",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
