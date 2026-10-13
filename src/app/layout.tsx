@@ -13,7 +13,7 @@ const inter = Inter({
 const siteUrl = "https://shafeeq.colorkloud.us";
 const siteTitle = "Shafeeq Ahamed | DevOps Engineer in San Francisco";
 const siteDescription =
-  "DevOps Engineer in San Francisco with 6+ years building cloud infrastructure, GPU model-serving, Kubernetes, Terraform, and production systems at scale. AWS certified. Builder of PingPulse.";
+  "DevOps Engineer in San Francisco with 9+ years building cloud infrastructure, GPU model-serving, Kubernetes, Terraform, and production systems at scale. AWS certified. Builder of PingPulse.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
