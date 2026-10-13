@@ -159,65 +159,67 @@
       "id": "1",
       "company": "ColorKloud",
       "companyWebsite": "https://colorkloud.us",
-      "role": "Founding DevOps Consultant",
+      "role": "DevOps Consultant",
       "startDate": "Sep 2024",
       "endDate": "Present",
       "technologies": [
-        "Cloudflare Workers",
-        "AWS Bedrock",
+        "AWS",
         "Terraform",
-        "Ansible",
-        "ECS"
+        "Kubernetes",
+        "FinOps",
+        "NIST 800-53"
       ],
       "keyResponsibilities": [
-        "Deployed 17 production serverless applications on Cloudflare Workers with D1, integrating Stripe, RevenueCat, Twilio, Postmark, Supabase, Clerk, and Okta.",
-        "Built AI-powered applications using Cloudflare Workers AI bindings and AWS Bedrock for OCR pipelines running on ECS.",
-        "Cut client hosting costs by 40% ($500  to  $300/month) by migrating on-premises apps to the cloud with Terraform and Ansible.",
-        "Accelerated release cadence from weekly to daily deployments using Claude Code and Cursor for infrastructure development."
+        "Providing consultation for businesses to help them with AI adoption, compute cost optimization, FinOps, and NIST 800-53 security audits.",
+        "Design and maintain Kubernetes clusters from scratch for applications and models to maintain 99.9% uptime.",
+        "Strategically plan and deploy infrastructure to different regions in AWS with Terraform to reduce cost using internal AWS VPC, S3 data warehousing, batch retrieval, and AWS Batch for processing pipelines.",
+        "Performed compute-based DoD and foreign government contract negotiation studies to precisely estimate the cost of AI weather forecasting contracts."
       ]
     },
     {
       "id": "2",
-      "company": "Atmo Inc",
+      "company": "Atmo AI (Startup, YC W20, C2C via ColorKloud)",
       "companyWebsite": "https://atmo.ai",
-      "role": "Platform Engineer (via ColorKloud)",
+      "role": "DevOps Engineer",
       "startDate": "Mar 2025",
-      "endDate": "Nov 2025",
+      "endDate": "Jan 2026",
       "technologies": [
-        "AWS ECS",
-        "Nvidia H100",
-        "Docker",
+        "AWS",
+        "Terraform",
+        "GPU",
         "GitHub Actions",
-        "Datadog"
+        "NIST 800-53"
       ],
       "keyResponsibilities": [
-        "Architected AWS ECS infrastructure with Nvidia H100 GPUs for 70 concurrent multi-node weather forecast jobs serving DoD clients.",
-        "Cut deployment time by 83% (1 hour  to  10 minutes) by containerizing ML model deployments.",
-        "Saved $750K annually by rightsizing H100 instances, implementing AWS Batch scheduling, and optimizing S3 lifecycle policies.",
-        "Shipped frontend releases 2-3x daily via GitHub Actions and CloudFront CI/CD; maintained 99.9% uptime on-call.",
-        "Passed NIST 800-53 certification through security audits and DoD compliance evaluations."
+        "Architected infrastructure consolidation and migrated to AWS to adopt IaC with Terraform, with dynamic scaling capability of up to 70 GPU servers for a multi-model inference pipeline.",
+        "Spearheaded NIST 800-53 compliance sprint by performing security audits and rearchitecting for DoD tenants.",
+        "Led FinOps drive to save $750,000 annually by migrating cloud assets to AWS, S3 data archival, intelligent bandwidth and capacity decisions, and dynamically creating stateless model inference infrastructure.",
+        "Integrated GitHub Actions CI/CD pipeline for deploying the internal platform and model-serving frontend architecture, which improved release cadence from 2-3x releases per week to multiple deployments per day."
       ]
     },
     {
       "id": "3",
-      "company": "LocationIQ - Unwired Labs",
+      "company": "LocationIQ (Startup - Geocoding, Geolocation)",
       "companyWebsite": "https://locationiq.com",
-      "role": "DevOps Engineer & SRE",
+      "role": "DevOps Engineer",
       "startDate": "Mar 2020",
-      "endDate": "Mar 2024",
+      "endDate": "Jul 2024",
       "technologies": [
-        "AWS",
         "Ansible",
-        "HAProxy",
-        "Grafana",
-        "CodePipeline"
+        "AWS",
+        "MySQL",
+        "PostgreSQL",
+        "Elasticsearch",
+        "Nessus",
+        "OWASP ZAP"
       ],
       "keyResponsibilities": [
-        "Saved $84K annually by migrating 40% of on-premise workloads to AWS with capacity optimization.",
-        "Dropped p95 response time by 75% (100-200ms  to  under 50ms) with latency-based HAProxy routing.",
-        "Reduced critical vulnerabilities by 80% by adding security pre-checks to production rollouts.",
-        "Automated CI/CD with AWS CodePipeline; ran quarterly scans with Nessus, OWASP ZAP, and Probely.",
-        "Executed zero-downtime Ubuntu upgrades across 40+ servers and managed hybrid infra with Ansible."
+        "Mitigated and resolved issues when on-call to protect the infrastructure, and performed postmortem studies and infrastructure improvements which reduced incidents by 40%.",
+        "Developed 40+ Ansible playbooks and reusable roles to quickly provision and set up virtual machines and maintain consistency across different environments and providers.",
+        "Performed load testing after every geocoder data import with Vegeta to understand bottlenecks and rapidly resolve them, successfully maintaining latency within 50ms globally.",
+        "Conducted routine security audits by performing vulnerability scanning and penetration testing using Nessus, Probely, OWASP ZAP, Metasploit, and npm to avoid potential risks per OWASP Top 10 vulnerabilities.",
+        "Regularly took part in importing geocoding and geolocation data from various sources, building and compiling the data, and performing regression testing to approve rollouts to 80+ production servers.",
+        "Collaborated with the business team to solve technical production tickets and feature requests while maintaining consistency across MySQL, PostgreSQL, and Elasticsearch databases."
       ]
     },
     {
@@ -225,18 +227,20 @@
       "company": "Zudioz",
       "companyWebsite": "#!",
       "role": "DevOps Engineer",
-      "startDate": "Oct 2018",
-      "endDate": "May 2020",
+      "startDate": "Sep 2017",
+      "endDate": "Feb 2020",
       "technologies": [
-        "AWS EC2",
-        "MySQL",
+        "AWS",
+        "Linux",
+        "Bash",
+        "Joomla",
         "Magento",
         "WordPress"
       ],
       "keyResponsibilities": [
-        "Built 12 e-commerce sites on Joomla, Magento, and WordPress for manufacturing clients.",
-        "Improved disaster recovery MTTR by 94% (2 days  to  3 hours) with MySQL backup automation.",
-        "Ran MySQL master-replica configuration across 27 servers and maintained AWS EC2 infrastructure."
+        "Started as system admin and moved to DevOps within a year, then managed the complete AWS stack.",
+        "Responsible for provisioning and maintaining 25+ Linux servers in AWS for Joomla, Magento, and WordPress hosting.",
+        "Planned and developed Bash scripts to keep backups of approximately 5 TB of data on and off site to reduce total MTTR."
       ]
     }
   ],
